@@ -1,0 +1,25 @@
+{
+  "name": "mobx-store-inheritance",
+  "version": "1.0.0",
+  "description": "It is like original makeAutoObservable function which allows inheritance for Mobx stores",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inoyakaigor/mobx-store-inheritance.git"
+  },
+  "keywords": [
+    "mobx",
+    "store",
+    "inheritance",
+    "makeAutoObservable"
+  ],
+  "author": "Igor «InoY» Zviagintsev, the other guy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inoyakaigor/mobx-store-inheritance/issues"
+  },
+  "homepage": "https://github.com/inoyakaigor/mobx-store-inheritance#readme"
+}
