@@ -4,9 +4,8 @@
 name: Mobx store inheritance
 
 on:
-  push:
-    tags:
-      - "*"
+  release:
+    types: [created]
 
 jobs:
   build:
@@ -15,11 +14,12 @@ jobs:
       contents: read
       packages: write
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: chmod -R u+x .
+      - run: npm ci
       - run: npm run build
       - name: 'Upload prepared files'
         uses: actions/upload-artifact@v2
@@ -31,7 +31,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
