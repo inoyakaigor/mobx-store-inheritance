@@ -1,6 +1,6 @@
 {
   "name": "mobx-store-inheritance",
-  "version": "1.0.0",
+  "version": "1.0.1-0",
   "description": "It is like original makeAutoObservable function which allows inheritance for Mobx stores",
   "main": "index.mjs",
   "scripts": {
