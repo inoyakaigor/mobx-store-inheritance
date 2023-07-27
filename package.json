@@ -4,6 +4,7 @@
   "description": "It is like original makeAutoObservable function which allows inheritance for Mobx stores",
   "main": "index.mjs",
   "scripts": {
+    "build": "./node_modules/.bin/tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,10 +17,17 @@
     "inheritance",
     "makeAutoObservable"
   ],
-  "author": "Igor «InoY» Zviagintsev, the other guy",
+  "author": "urugator, Igor «InoY» Zviagintsev",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/inoyakaigor/mobx-store-inheritance/issues"
   },
-  "homepage": "https://github.com/inoyakaigor/mobx-store-inheritance#readme"
+  "type": "module",
+  "homepage": "https://github.com/inoyakaigor/mobx-store-inheritance#readme",
+  "dependencies": {
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "mobx": "^6"
+  }
 }
