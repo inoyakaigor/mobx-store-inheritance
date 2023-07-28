@@ -1,7 +1,11 @@
 // https://github.com/mobxjs/mobx/discussions/2850#discussioncomment-497321
 
 import {
-  $mobx, AnnotationsMap, CreateObservableOptions, isObservable, makeObservable
+  $mobx,
+  AnnotationsMap,
+  CreateObservableOptions,
+  isObservable,
+  makeObservable
 } from 'mobx'
 
 const annotationsSymbol = Symbol()
@@ -10,7 +14,7 @@ const objectPrototype = Object.prototype
 type NoInfer<T> = [T][T extends any ? 0 : never];
 type Annotations<T extends Object = Object, U extends PropertyKey = never> = AnnotationsMap<T, U>;
 
-const makeSimpleAutoObservable = <
+const makeAutoObservable = <
   T extends object & { [annotationsSymbol]?: any },
   AdditionalKeys extends PropertyKey = never
 >(
@@ -58,4 +62,4 @@ const makeSimpleAutoObservable = <
   return makeObservable(target, annotations, options)
 }
 
-export default makeSimpleAutoObservable
+export default makeAutoObservable

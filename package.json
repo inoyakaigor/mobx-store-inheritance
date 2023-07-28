@@ -1,11 +1,11 @@
 {
   "name": "mobx-store-inheritance",
-  "version": "1.0.1-0",
+  "version": "1.0.3",
   "description": "It is like original makeAutoObservable function which allows inheritance for Mobx stores",
-  "main": "index.mjs",
+  "main": "dist/index.js",
   "scripts": {
     "build": "./node_modules/.bin/tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test no candies\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,20 @@
     "inheritance",
     "makeAutoObservable"
   ],
+  "files": [
+    "src",
+    "dist/",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "default": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "engines": {
+    "node": ">=14"
+  },
   "author": "urugator, Igor «InoY» Zviagintsev",
   "license": "ISC",
   "bugs": {
