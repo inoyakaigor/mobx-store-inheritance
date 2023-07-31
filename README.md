@@ -3,11 +3,12 @@
 # What is this?
 The `makeAutoObservable` function does not supporting subclassing. It is described in the Mobx [docs](https://mobx.js.org/subclassing.html#limitations).
 
-This package fixed this.
+This package fixes the issue with subclassing.
 
-A code in this package is a bit tuned copy paste from [this answer](https://github.com/mobxjs/mobx/discussions/2850#discussioncomment-497321) about inheritance in Mobx.
 
-Tested in production at few different projects
+The code in this package is a slightly modified version from an [answer](https://github.com/mobxjs/mobx/discussions/2850#discussioncomment-497321) about inheritance in Mobx.
+
+It has been tested in production on a few different projects.
 
 # How to use?
 
