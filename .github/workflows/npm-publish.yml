@@ -9,6 +9,10 @@ on:
 
 jobs:
   build:
+    # https://twitter.com/rmaximedev/status/1679926333982294017?t=FJLM0NsvPimRLyZOYnzHHw&s=35
+    concurrency:
+      group: ci-${{ github.head_ref || 'master' }}
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     permissions:
       contents: read
