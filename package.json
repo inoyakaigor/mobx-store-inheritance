@@ -38,10 +38,10 @@
   },
   "type": "module",
   "homepage": "https://github.com/inoyakaigor/mobx-store-inheritance#readme",
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^5"
   },
-  "peerDependencies": {
+  "dependencies": {
     "mobx": "^6"
   }
 }
